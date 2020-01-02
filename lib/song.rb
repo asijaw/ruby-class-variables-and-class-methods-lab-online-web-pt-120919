@@ -32,7 +32,7 @@ class Song
       if genre_count.include?(genre) == false
         genre_count[genre] = 1 
       else
-        genre_count += 1 
+        genre_count[genre] += 1 
       end
     }
     genre_count
