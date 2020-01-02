@@ -13,6 +13,9 @@ class Song
     if @@genres.include?(genre) == false
       @@genres << genre
     end
+    if @@artists.include?(artist) == false
+      @@artists << genre
+    end
   end
   
   def self.count 
@@ -21,6 +24,10 @@ class Song
   
   def self.genres 
     @@genres
+  end
+  
+  def self.artists
+    @@artists
   end
 end
     
